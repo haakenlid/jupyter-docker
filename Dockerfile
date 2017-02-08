@@ -1,4 +1,4 @@
-FROM opencv:3.6
+FROM haakenlid/opencv:3.6
 MAINTAINER haakenlid
 EXPOSE 8888
 VOLUME /var/notebooks

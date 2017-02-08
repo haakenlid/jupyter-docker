@@ -1,5 +1,5 @@
 # jupyter notebooks
-Docker image for running opencv3 and python 3.5 and jupyter
+Docker image for running opencv3 and python 3.6 and jupyter
 
 To run do this
 
