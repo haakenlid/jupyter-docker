@@ -1,5 +1,6 @@
 # jupyter notebooks
 Docker image for running opencv3 and python 3.6 and jupyter
+Includes jupyter notebooks with vim bindings.
 
 To run do this
 
