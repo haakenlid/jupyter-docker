@@ -7,4 +7,6 @@ To run do this
     docker build . --tag jupyter
     docker run -ti -p 8888:8888 -v ./notebooks:/var/notebooks jupyter
 
+or use the `nb` bash script.
+
 open browser at `localhost:8888`
