@@ -6,6 +6,5 @@ exec jupyter-notebook \
   --NotebookApp.token='' \
   --NotebookApp.password='' \
   --no-browser \
-  --allow-root \
   --ip=0.0.0.0
 
