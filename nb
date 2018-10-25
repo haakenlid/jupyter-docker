@@ -1,7 +1,0 @@
-#!/bin/bash
-TAG='jupyter'
-if [[ -z $(docker images -q $TAG) ]]; then
-  printf "building jupyter docker image with tag \"$TAG\""
-  docker build . --tag $TAG
-fi
-docker run --rm -t -i -p 8888:8888 -v $PWD/notebooks:/var/notebooks $TAG
