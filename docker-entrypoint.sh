@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# starts a jupyter notebook server
-exec jupyter-notebook \
+# starts a jupyterlab notebook server
+exec jupyter-lab \
   --notebook-dir=/var/notebooks \
   --NotebookApp.token='' \
   --NotebookApp.password='' \
