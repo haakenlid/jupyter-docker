@@ -4,6 +4,7 @@
 # globally install jupyter
 python -m pip install --no-cache-dir \
   jupyterlab \
+  ipywidgets \
   tqdm \
   matplotlib \
   seaborn \
