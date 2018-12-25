@@ -25,6 +25,6 @@ jupyter labextension install \
   ;
 
 # remove nodejs and extension build artifacts
-apt-get purge nodejs -y
+apt-get purge nodejs -y && rm /etc/apt/sources.list.d/*
 staging=$(jupyter lab paths | awk -F': *' '/Application/{print $2}')/staging/
 rm -rf "$staging" /var/lib/apt/lists/*
