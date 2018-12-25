@@ -16,7 +16,7 @@ python -m pip install --no-cache-dir \
 
 # install nodejs (required for building jupyterlab extensions)
 wget -qO- https://deb.nodesource.com/setup_10.x | bash -
-apt-get install nodejs -y 
+apt-get install nodejs --yes --no-install-recommends
 
 # install jupyterlab extensions
 jupyter labextension install \
@@ -25,6 +25,6 @@ jupyter labextension install \
   ;
 
 # remove nodejs and extension build artifacts
-apt-get purge nodejs -y && rm /etc/apt/sources.list.d/*
 staging=$(jupyter lab paths | awk -F': *' '/Application/{print $2}')/staging/
-rm -rf "$staging" /var/lib/apt/lists/*
+apt-get purge nodejs -y
+rm -rf "$staging" /var/lib/apt/lists/* /etc/apt/sources.list.d/*
