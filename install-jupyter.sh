@@ -3,15 +3,15 @@
 
 # globally install jupyter
 python -m pip install --no-cache-dir \
-  jupyterlab \
   ipywidgets \
-  tqdm \
+  jupyterlab \
   matplotlib \
-  seaborn \
   numpy \
+  opencv-python-headless \
   pandas \
   pillow \
-  opencv-python-headless \
+  seaborn \
+  tqdm \
   ;
 
 # install nodejs (required for building jupyterlab extensions)
